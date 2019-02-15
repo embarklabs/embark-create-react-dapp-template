@@ -22,7 +22,7 @@ module.exports = {
       {
         nodeAccounts: true, // Accounts use for the node
         numAddresses: "1", // Number of addresses/accounts (defaults to 1)
-        password: "config/development/devpassword" // Password file for the accounts
+        password: "embarkConfig/development/devpassword" // Password file for the accounts
       },
       // Below are additional accounts that will count as `nodeAccounts` in the `deployment` section of your contract config
       // Those will not be unlocked in the node itself
@@ -67,27 +67,27 @@ module.exports = {
     isDev: false,
     datadir: ".embark/privatenet/datadir",
     // -- mineWhenNeeded --
-    // This options is only valid when isDev is false. 
+    // This options is only valid when isDev is false.
     // Enabling this option uses our custom script to mine only when needed.
     // Embark creates a development account for you (using `geth account new`) and funds the account. This account can be used for
     // development (and even imported in to MetaMask). To enable correct usage, a password for this account must be specified
     // in the `account > password` setting below.
     // NOTE: once `mineWhenNeeded` is enabled, you must run an `embark reset` on your dApp before running
     // `embark blockchain` or `embark run` for the first time.
-    mineWhenNeeded: true, 
+    mineWhenNeeded: true,
     // -- genesisBlock --
     // This option is only valid when mineWhenNeeded is true (which is only valid if isDev is false).
     // When enabled, geth uses POW to mine transactions as it would normally, instead of using POA as it does in --dev mode.
-    // On the first `embark blockchain or embark run` after this option is enabled, geth will create a new chain with a 
+    // On the first `embark blockchain or embark run` after this option is enabled, geth will create a new chain with a
     // genesis block, which can be configured using the `genesisBlock` configuration option below.
-    genesisBlock: "config/privatenet/genesis.json", // Genesis block to initiate on first creation of a development node
+    genesisBlock: "embarkConfig/privatenet/genesis.json", // Genesis block to initiate on first creation of a development node
     nodiscover: true,
     maxpeers: 0,
     proxy: true,
     accounts: [
       {
         nodeAccounts: true,
-        password: "config/privatenet/password" // Password to unlock the account
+        password: "embarkConfig/privatenet/password" // Password to unlock the account
       }
     ],
     targetGasLimit: 8000000,
@@ -99,7 +99,7 @@ module.exports = {
     networkType: "custom",
     networkId: 1337,
     isDev: false,
-    genesisBlock: "config/privatenet/genesis-parity.json", // Genesis block to initiate on first creation of a development node
+    genesisBlock: "embarkConfig/privatenet/genesis-parity.json", // Genesis block to initiate on first creation of a development node
     datadir: ".embark/privatenet/datadir",
     mineWhenNeeded: false,
     nodiscover: true,
@@ -108,7 +108,7 @@ module.exports = {
     accounts: [
       {
         nodeAccounts: true,
-        password: "config/privatenet/password"
+        password: "embarkConfig/privatenet/password"
       }
     ],
     targetGasLimit: 8000000,
@@ -123,7 +123,7 @@ module.exports = {
     accounts: [
       {
         nodeAccounts: true,
-        password: "config/testnet/password"
+        password: "embarkConfig/testnet/password"
       }
     ]
   },
@@ -138,7 +138,7 @@ module.exports = {
     accounts: [
       {
         nodeAccounts: true,
-        password: "config/livenet/password"
+        password: "embarkConfig/livenet/password"
       }
     ]
   }

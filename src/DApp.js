@@ -25,7 +25,7 @@ class App extends React.Component {
 
   render() {
    if (this.state.loading) {
-     return 'Loading...'`;`
+     return 'Loading...';
    }
    return 'Ready!';
   }
