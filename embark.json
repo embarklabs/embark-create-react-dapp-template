@@ -17,7 +17,7 @@
     "ipfs-api": "17.2.4"
   },
   "plugins": {
-    "web3Connector": {}
+    "web3connector": {}
   },
   "pluginStash": {
   },
