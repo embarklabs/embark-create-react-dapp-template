@@ -18,7 +18,7 @@ class App extends React.Component {
       if (err) {
         throw err;
       }
-      this.setState({loading: false})
+      this.setState({loading: false});
     });
   }
 

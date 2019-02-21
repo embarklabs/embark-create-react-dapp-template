@@ -29,3 +29,4 @@ config/livenet/password
 coverage
 dist
 node_modules
+src/embarkArtifacts

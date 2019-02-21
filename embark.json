@@ -19,7 +19,5 @@
   "plugins": {
     "web3connector": {}
   },
-  "pluginStash": {
-  },
   "generationDir": "src/embarkArtifacts"
 }
