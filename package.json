@@ -5,8 +5,6 @@
     "@babel/runtime-corejs2": "^7.3.1",
     "babel-loader": "^8.0.5",
     "embarkjs-connector-web3": "^4.0.0",
-    "embarkjs-ipfs": "^4.0.0",
-    "embarkjs-whisper": "^4.0.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5"
